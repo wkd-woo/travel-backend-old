@@ -1,4 +1,4 @@
-package com.trablock.demo.domain.member;
+package com.trablock.demo.domain.location;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
