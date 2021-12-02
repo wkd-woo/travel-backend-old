@@ -7,5 +7,5 @@ import lombok.RequiredArgsConstructor;
 @Getter
 @RequiredArgsConstructor
 public enum LocationType {
-    TourSpot, CultureFacility, Performance, Leports, Accommodation, Restaurant
+    ATTRACTION, CULTURE, FESTIVAL, LEPORTS, LODGE, RESTAURANT
 }
