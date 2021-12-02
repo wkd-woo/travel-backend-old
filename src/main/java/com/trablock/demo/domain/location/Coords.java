@@ -11,8 +11,8 @@ import javax.persistence.Embeddable;
 public class Coords {
 
     //private Location location;
-    private Float latitude;
-    private Float longitude;
+    private double latitude;
+    private double longitude;
 
     protected Coords() {
     }

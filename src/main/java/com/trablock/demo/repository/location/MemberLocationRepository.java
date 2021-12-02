@@ -1,6 +1,7 @@
 package com.trablock.demo.repository.location;
 
 import com.trablock.demo.domain.location.MemberLocation;
+import com.trablock.demo.domain.member.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -14,8 +15,8 @@ public interface MemberLocationRepository extends JpaRepository<MemberLocation, 
     @Transactional
     MemberLocation save(MemberLocation memberLocation);
 
-    @Query("select m from member_location m where m.member =: id ")
-    List<MemberLocation> findByMember(@Param("id") Long memberId);
+    @Query("select m from member_location m where m.member =: member")
+    List<MemberLocation> findByMember(@Param("member") Member member);
 
 
 
