@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 @Getter
 public class CultureLocation extends SystemLocation {
 
-    private String parking;
+    private boolean parking;
     private String parkingFee;
     private String restDate;
     private String fee;

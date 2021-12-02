@@ -12,7 +12,8 @@ public class RestaurantLocation extends SystemLocation {
 
     private String popularMenu;
     private String openTime;
-    private String packing;
+    private boolean parking;
+    private boolean packing;
     private String restDate;
     private String smoking;
     private String menu;

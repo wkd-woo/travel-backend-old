@@ -12,9 +12,9 @@ public class LodgeLocation extends SystemLocation {
     private String checkoutTime;
 
     @Column(name = "lodge_chk_cooking")
-    private String cooking;
+    private boolean cooking;
 
-    private String parking;
+    private boolean parking;
     private String reservation_url;
     private String subFacility;
 

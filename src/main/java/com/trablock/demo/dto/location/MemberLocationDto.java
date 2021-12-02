@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @AllArgsConstructor
-public class LocationDto {
+public class MemberLocationDto {
 
     /**
      * Location response DTO
@@ -30,17 +30,18 @@ public class LocationDto {
 
         private static ModelMapper modelMapper = new ModelMapper();
 
-        public static Response of(Location location) {
+        public static Response of(MemberLocation location) {
             final Response dto = modelMapper.map(location, Response.class);
             return dto;
         }
 
-        public static List<Response> of(List<Location> locationList) {
+        public static List<Response> of(List<MemberLocation> locationList) {
             return locationList.stream()
                     .map(Response::of)
                     .collect(Collectors.toList());
         }
     }
+    
 
     /**
      * Location request DTO

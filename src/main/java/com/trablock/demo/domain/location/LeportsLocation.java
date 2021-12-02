@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 public class LeportsLocation extends SystemLocation {
 
     private String openPeriod;
-    private String parking;
+    private boolean parking;
     private String parkingFee;
     private String reservation;
     private String restDate;
